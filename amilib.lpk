@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="amilib"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Anton Ermakov"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="src;src\eventbus"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <Verbosity>
+          <ShowDebugInfo Value="True"/>
+        </Verbosity>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Asterisk AMI Client"/>
+    <License Value="MIT"/>
+    <Version Major="1" Minor="0" Release="0"/>
+    <Files>
+      <Item>
+        <Filename Value="src\ami_actions.pas"/>
+        <UnitName Value="ami_actions"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_client.pas"/>
+        <UnitName Value="ami_client"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_connection.pas"/>
+        <UnitName Value="ami_connection"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_events.pas"/>
+        <UnitName Value="ami_events"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_parser.pas"/>
+        <UnitName Value="ami_parser"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_types.pas"/>
+        <UnitName Value="ami_types"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_utils.pas"/>
+        <UnitName Value="ami_utils"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_cache.pas"/>
+        <UnitName Value="ami_cache"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_enums.pas"/>
+        <UnitName Value="ami_enums"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_action_factory.pas"/>
+        <UnitName Value="ami_action_factory"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_bus.pas"/>
+        <UnitName Value="ami_bus"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_log.pas"/>
+        <UnitName Value="ami_log"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_event_factory.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="ami_event_factory"/>
+      </Item>
+      <Item>
+        <Filename Value="src\eventbus\ami_eventbus_threaded.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="ami_eventbus_threaded"/>
+      </Item>
+      <Item>
+        <Filename Value="src\eventbus\ami_bus_queue.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="ami_bus_queue"/>
+      </Item>
+      <Item>
+        <Filename Value="src\eventbus\ami_event_types.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="ami_event_types"/>
+      </Item>
+      <Item>
+        <Filename Value="src\eventbus\i_eventbus.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="i_eventbus"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_exceptions.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="ami_exceptions"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_agi.pas"/>
+        <UnitName Value="ami_agi"/>
+      </Item>
+      <Item>
+        <Filename Value="src\ami_event_map.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="ami_event_map"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="laz_synapse"/>
+        <MinVersion Major="40" Minor="1" Valid="True"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
